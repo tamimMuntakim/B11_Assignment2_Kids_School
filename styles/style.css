@@ -16,6 +16,15 @@
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
 }
+.color-orange{
+    color: #FEA301;
+}
+.color-skublue{
+    color: #01ACFD;
+}
+.color-white{
+    color: #FFFFFF;
+}
 
 /* specifics */
 .navbar {
@@ -73,7 +82,6 @@
 .contatc-btn {
     padding: 10px 60px;
     background-color: #FEA301;
-    color: #FFFFFF;
     border-radius: 12px;
     border: none;
     font-size: 20px;
@@ -83,6 +91,31 @@
     display: none;
 }
 
+.banner-container {
+    max-width: 1170px;
+    margin: 0px auto;
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-title{
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.banner-body{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+.enroll{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 47px;
+    background-color: #111111;
+    border-radius: 12px;
+}
 
 
 /* responsive */
@@ -102,5 +135,32 @@
         display: inline;
         width: 28px;
     }
-
+    .banner-container{
+        margin: 6px 17px 0px;
+        flex-direction: column-reverse;
+        gap: 20px;
+        justify-content:center;
+        align-items: center;
+    }
+    .banner-img img{
+        width: 100%;
+    }
+    .banner-content{
+        text-align: center;
+    }
+    .banner-title{
+        font-size: 32px;
+        margin-bottom: 18px;
+    }
+    .banner-body{
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 18px;
+    }
+    .enroll{
+        font-size: 16px;
+        font-weight: 700;
+        padding: 6px 24px;
+        border-radius: 8px;
+    }
 }
