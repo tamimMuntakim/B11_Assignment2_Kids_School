@@ -16,14 +16,26 @@
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
 }
-.color-orange{
+
+.color-orange {
     color: #FEA301;
 }
-.color-skublue{
+
+.color-skublue {
     color: #01ACFD;
 }
-.color-white{
+
+.color-white {
     color: #FFFFFF;
+}
+.color-card-read1{
+    color: #33b4fa;
+}
+.color-card-read2{
+    color: #F0AA00;
+}
+.color-card-read3{
+    color: #8700FF;
 }
 
 /* specifics */
@@ -41,10 +53,12 @@
     gap: 11px;
     align-items: center;
 }
-.title{
+
+.title {
     font-size: 32px;
     font-weight: 700;
 }
+
 .menu {
     display: flex;
     list-style: none;
@@ -55,25 +69,25 @@
     text-decoration: none;
 }
 
-.menu-item1 a{
+.menu-item1 a {
     font-size: 20px;
     font-weight: 700;
     color: #FEA301;
 }
 
-.menu-item2 a{
+.menu-item2 a {
     font-size: 20px;
     font-weight: 600;
     color: #01ACFD;
 }
 
-.menu-item3 a{
+.menu-item3 a {
     font-size: 20px;
     font-weight: 600;
     color: #05D4DF;
 }
 
-.menu-item4 a{
+.menu-item4 a {
     font-size: 20px;
     font-weight: 600;
     color: #5D58EF;
@@ -87,7 +101,8 @@
     font-size: 20px;
     font-weight: 600;
 }
-.menu-icon-container{
+
+.menu-icon-container {
     display: none;
 }
 
@@ -99,68 +114,183 @@
     justify-content: space-between;
     align-items: center;
 }
-.banner-title{
+
+.banner-title {
     font-size: 56px;
     font-weight: 700;
     margin-bottom: 24px;
 }
-.banner-body{
+
+.banner-body {
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 24px;
 }
-.enroll{
+
+.enroll {
     font-size: 20px;
     font-weight: 700;
     padding: 10px 47px;
     background-color: #111111;
     border-radius: 12px;
+    border: none;
+}
+
+
+#curriculum {
+    background: url('../assets/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#curriculum > * {
+    background: transparent;
+}
+
+#curriculum-container {
+    max-width: 1170px;
+    margin: 0px auto;
+}
+
+.curriculum-title {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 46px;
+    font-weight: 700;
+    background: inherit;
+}
+
+.curriculum-card-container {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-top: 80px;
+
+}
+
+.curriculum-card1,
+.curriculum-card2,
+.curriculum-card3 {
+    border: 1px solid black;
+    display: flex;
+    gap: 34px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 53px 40px;
+    border-radius: 18px;
+}
+
+.curriculum-card1 * {
+    background: transparent;
+}
+
+.curriculum-card2 * {
+    background: transparent;
+}
+
+.curriculum-card3 * {
+    background: transparent;
+}
+
+.curriculum-card1 {
+    border: 1px solid #DEF5FF;
+    background: linear-gradient(to bottom, #DEF5FF 0%, rgba(255, 255, 255, 0) 40%), #FFFFFF;
+
+}
+
+.curriculum-card2 {
+    border: 1px solid #FFF4DC;
+    background: linear-gradient(to bottom, #FFF4DC 0%, rgba(255, 255, 255, 0) 40%), #FFFFFF;
+}
+
+.curriculum-card3 {
+    border: 1px solid #F2E8FF;
+    background: linear-gradient(to bottom, #EEE1FF 0%, rgba(255, 255, 255, 0) 40%), #FFFFFF;
+}
+.card-title{
+    font-size: 24px;
+    font-weight: 700;
+}
+.card-body {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+.card-more{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.card-btn-container {
+    margin-top: 80px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.card-btn {
+    height: 60px;
 }
 
 
 /* responsive */
-@media screen and (max-width:576px){
-    .navbar{
+@media screen and (max-width:576px) {
+    .navbar {
         padding: 12px 16px;
         justify-content: space-between;
         border: 0.5px solid #FEA301;
     }
-    .logo-container .title{
+
+    .logo-container .title {
         display: none;
     }
-    .menu-container, .cntct-btn-container{
+
+    .menu-container,
+    .cntct-btn-container {
         display: none;
     }
-    .menu-icon-container{
+
+    .menu-icon-container {
         display: inline;
         width: 28px;
     }
-    .banner-container{
+
+    .banner-container {
         margin: 6px 17px 0px;
         flex-direction: column-reverse;
         gap: 20px;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
     }
-    .banner-img img{
+
+    .banner-img img {
         width: 100%;
     }
-    .banner-content{
+
+    .banner-content {
         text-align: center;
     }
-    .banner-title{
+
+    .banner-title {
         font-size: 32px;
         margin-bottom: 18px;
     }
-    .banner-body{
+
+    .banner-body {
         font-size: 14px;
         font-weight: 500;
         margin-bottom: 18px;
     }
-    .enroll{
+
+    .enroll {
         font-size: 16px;
         font-weight: 700;
         padding: 6px 24px;
         border-radius: 8px;
+        border: none;
     }
 }
