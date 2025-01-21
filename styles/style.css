@@ -28,15 +28,19 @@
 .color-white {
     color: #FFFFFF;
 }
-.color-card-read1{
+
+.color-card-read1 {
     color: #33b4fa;
 }
-.color-card-read2{
+
+.color-card-read2 {
     color: #F0AA00;
 }
-.color-card-read3{
+
+.color-card-read3 {
     color: #8700FF;
 }
+
 
 /* specifics */
 .navbar {
@@ -141,9 +145,10 @@
     background: url('../assets/bg.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
-#curriculum > * {
+#curriculum>* {
     background: transparent;
 }
 
@@ -161,14 +166,10 @@
 }
 
 .curriculum-card-container {
-    display: grid;
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    align-items: flex-start;
     gap: 30px;
-    /* justify-content: space-between; */
-    align-items: center;
     margin-top: 80px;
-
 }
 
 .curriculum-card1,
@@ -211,22 +212,27 @@
     border: 1px solid #F2E8FF;
     background: linear-gradient(to bottom, #EEE1FF 0%, rgba(255, 255, 255, 0) 40%), #FFFFFF;
 }
-.card-title{
+
+.card-title {
     font-size: 24px;
     font-weight: 700;
+    color: #202020;
 }
+
 .card-body {
     text-align: center;
     font-size: 15px;
     font-weight: 500;
+    color: #808080;
 }
-.card-more{
+
+.card-more {
     font-size: 15px;
     font-weight: 700;
 }
 
 .card-btn-container {
-    margin-top: 80px;
+    margin: 80px 0px 60px;
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -236,6 +242,147 @@
     height: 60px;
 }
 
+#stories {
+    background: url('../assets/bg.png'), linear-gradient(to top, rgba(255, 234, 1, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#stories>* {
+    background: transparent;
+}
+
+
+#stories-container {
+    max-width: 1170px;
+    margin: 0px auto;
+}
+
+.story-title {
+    padding: 60px 0px 80px;
+    text-align: center;
+    font-size: 46px;
+    font-weight: 700;
+    background: transparent;
+}
+
+.story-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background: transparent;
+}
+
+.big-card {
+    background: #FFFFFF;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.big-card * {
+    background: inherit;
+}
+
+.big-card img {
+    width: 100%;
+    position: relative;
+}
+
+.story-date-btn {
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    border-radius: 50px;
+    position: relative;
+    border: none;
+}
+
+.big-card .story-date-btn {
+    padding: 15px 19px;
+    top: -26px;
+    left: 40px;
+    background: #3CD8E8;
+}
+
+.story-card-content {
+    padding: 34px 68px 34px 38px;
+}
+
+.big-card .story-card-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 48px;
+    color: #000000;
+}
+
+.big-card .story-body {
+    font-size: 16px;
+    font-weight: 500;
+    color: #666666;
+}
+
+.small-card-contaner {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background: transparent;
+}
+
+.small-card {
+    background: #FFFFFF;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.small-card * {
+    background: inherit;
+}
+
+.small-card img {
+    width: 100%;
+    position: relative;
+}
+
+.small-card .story-date-btn {
+    padding: 10px 19px;
+    top: -21px;
+    left: 35px;
+    background: #95B226;
+}
+
+.small-card:nth-child(2) .story-date-btn {
+    background: #5D58F0;
+}
+
+.small-card .story-card-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0px 38px 28px;
+    color: #000000;
+}
+
+.view-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+.view {
+    background: #000000;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    border-radius: 12px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    padding: 10px 61px;
+}
 
 /* responsive */
 @media screen and (max-width:576px) {
@@ -292,5 +439,145 @@
         padding: 6px 24px;
         border-radius: 8px;
         border: none;
+        margin-bottom: 20px;
+    }
+
+    #curriculum {
+        background-repeat: repeat-y;
+        background-size: contain;
+        background-position: top left;
+    }
+
+    #curriculum-container {
+        max-width: 95%;
+        margin: 0px auto;
+    }
+
+    .curriculum-title {
+        margin-top: 40px;
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    .curriculum-card-container {
+        flex-direction: column;
+        gap: 12px;
+        margin: 20px 0px;
+    }
+
+    .curriculum-card1,
+    .curriculum-card2,
+    .curriculum-card3 {
+        gap: 22px;
+        border-radius: 13px;
+    }
+
+    .card-title {
+        font-size: 16.5px;
+    }
+
+    .card-body {
+        font-size: 10px;
+        font-weight: 500;
+        max-width: 50%;
+    }
+
+    .card-btn-container {
+        display: none;
+    }
+
+    .card-more {
+        font-size: 10.5px;
+    }
+
+
+    #stories-container {
+        max-width: 95%;
+        margin: 0px auto;
+    }
+
+    .story-title {
+        padding: 60px 0px 30px;
+        text-align: center;
+        font-size: 26px;
+        font-weight: 700;
+        background: transparent;
+    }
+
+    .story-card-container {
+        display: block;
+    }
+    .big-card{
+        display: none;
+    }
+    .small-card .story-date-btn {
+        font-size: 9px;
+        font-weight: 500;
+        color: #FFFFFF;
+        border-radius: 28px;
+        position: relative;
+        border: none;
+        padding: 6px 11px;
+        top: -18px;
+        left: 23px;
+        background: #95B226;
+    }
+
+    .small-card-contaner {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        background: transparent;
+    }
+
+    .small-card {
+        background: #FFFFFF;
+        border-radius: 16px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .small-card * {
+        background: transparent;
+    }
+
+    .small-card img {
+        width: 100%;
+        position: relative;
+    }
+
+    .small-card:nth-child(2) .story-date-btn {
+        background: #5D58F0;
+    }
+
+    .small-card .story-card-title {
+        font-size: 9px;
+        font-weight: 700;
+        margin: 0px 32px 20px 23px;
+        color: #000000;
+    }
+
+    .view-btn-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+    }
+
+    .view {
+        background: #000000;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 700;
+        border: none;
+        border-radius: 12px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        padding: 10px 37px;
     }
 }
+
+/*
+
+*/
