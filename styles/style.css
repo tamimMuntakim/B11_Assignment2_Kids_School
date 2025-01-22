@@ -106,9 +106,14 @@
     font-weight: 600;
 }
 
+.contatc-btn:hover {
+    background-color: #ffbb46;
+}
+
 .menu-icon-container {
     display: none;
 }
+
 
 .banner-container {
     max-width: 1170px;
@@ -138,6 +143,9 @@
     background-color: #111111;
     border-radius: 12px;
     border: none;
+}
+.enroll:hover{
+    background-color: #4c4c4c;
 }
 
 
@@ -241,6 +249,10 @@
 .card-btn {
     height: 60px;
 }
+.card-btn:hover{
+    box-shadow: 1px 1px 1px #202020;
+}
+
 
 #stories {
     background: url('../assets/bg.png'), linear-gradient(to top, rgba(255, 234, 1, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%);
@@ -252,7 +264,6 @@
 #stories>* {
     background: transparent;
 }
-
 
 #stories-container {
     max-width: 1170px;
@@ -383,6 +394,10 @@
     margin-bottom: 60px;
     padding: 10px 61px;
 }
+.view:hover{
+    background: #4c4c4c;
+}
+
 
 footer {
     background: #01ACFD;
@@ -400,9 +415,6 @@ footer * {
     grid-template-columns: repeat(1, 2fr) repeat(2, 1fr);
 }
 
-/* .end-section *{
-    background: transparent;
-} */
 .img-title-container {
     display: flex;
     gap: 10px;
@@ -456,11 +468,13 @@ footer * {
     display: flex;
     gap: 10px;
 }
-.marqueeText{
+
+.marqueeText {
     padding: 20px 0px;
     font-size: 30px;
     font-weight: 600;
 }
+
 
 /* responsive */
 @media screen and (max-width:576px) {
@@ -512,11 +526,9 @@ footer * {
     }
 
     .enroll {
-        font-size: 16px;
-        font-weight: 700;
+        font-size: 16px;;
         padding: 6px 24px;
         border-radius: 8px;
-        border: none;
         margin-bottom: 20px;
     }
 
@@ -534,7 +546,6 @@ footer * {
     .curriculum-title {
         margin-top: 40px;
         font-size: 26px;
-        font-weight: 700;
     }
 
     .curriculum-card-container {
@@ -556,7 +567,6 @@ footer * {
 
     .card-body {
         font-size: 10px;
-        font-weight: 500;
         max-width: 50%;
     }
 
@@ -576,10 +586,7 @@ footer * {
 
     .story-title {
         padding: 60px 0px 30px;
-        text-align: center;
         font-size: 26px;
-        font-weight: 700;
-        background: transparent;
     }
 
     .story-card-container {
@@ -592,15 +599,10 @@ footer * {
 
     .small-card .story-date-btn {
         font-size: 9px;
-        font-weight: 500;
-        color: #FFFFFF;
         border-radius: 28px;
-        position: relative;
-        border: none;
         padding: 6px 11px;
         top: -18px;
         left: 23px;
-        background: #95B226;
     }
 
     .small-card-contaner {
@@ -608,7 +610,6 @@ footer * {
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
-        background: transparent;
     }
 
     .small-card {
@@ -633,29 +634,16 @@ footer * {
 
     .small-card .story-card-title {
         font-size: 9px;
-        font-weight: 700;
         margin: 0px 32px 20px 23px;
-        color: #000000;
-    }
-
-    .view-btn-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: transparent;
     }
 
     .view {
-        background: #000000;
-        color: #FFFFFF;
         font-size: 16px;
-        font-weight: 700;
-        border: none;
-        border-radius: 12px;
         margin-top: 20px;
         margin-bottom: 40px;
         padding: 10px 37px;
     }
+    
 
     .end-section {
         max-width: 90%;
@@ -665,50 +653,51 @@ footer * {
         flex-direction: column;
         gap: 32px;
     }
-    
+
     .img-title-container {
         gap: 8px;
         margin-bottom: 22px;
     }
-    
+
     .img-title-container img {
         height: 100%;
     }
-    
+
     .org-title {
         font-size: 35px;
         font-weight: 700;
     }
-    
+
     .short-desc {
         font-size: 16px;
         font-weight: 400;
     }
-    
+
     .about {
         font-size: 20px;
         font-weight: 600;
         margin-bottom: 25px;
     }
-    
+
     .about-menu {
         gap: 15px;
     }
-    
+
     .about-menu li {
         font-size: 16px;
     }
-    
+
     .keep-touch {
         font-size: 22px;
         margin-bottom: 35px;
     }
-    
+
     .contact-img-container {
         display: flex;
         gap: 8px;
     }
-    .marqueeText{
+
+    .marqueeText {
         padding: 10px 0px;
         font-size: 15px;
     }
